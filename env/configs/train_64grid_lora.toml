@@ -1,0 +1,67 @@
+output_dir = '${OUTPUT_DIR}'
+dataset = '${REPO_ROOT}/env/configs/dataset_64grid.toml'
+
+epochs = 10
+micro_batch_size_per_gpu = 1
+pipeline_stages = 1
+gradient_accumulation_steps = 1
+gradient_clipping = 1.0
+num_dataloader_workers = 0
+warmup_steps = 100
+lr_scheduler = 'cosine'
+cosine_min_lr_ratio = 0.0
+uncond_fraction = 0.1
+
+eval_datasets = []
+eval_every_n_epochs = 1
+eval_before_first_step = false
+eval_micro_batch_size_per_gpu = 1
+eval_gradient_accumulation_steps = 1
+
+save_every_n_epochs = 1
+checkpoint_every_n_minutes = 120
+activation_checkpointing = true
+partition_method = 'parameters'
+save_dtype = 'bfloat16'
+caching_batch_size = 1
+steps_per_print = 10
+keep_only_latest_epoch = true
+keep_only_latest_global_checkpoint = true
+global_loss_weight = 1.0
+layout_loss_weight = 0.1
+layout_loss_boundary_width = 1
+
+[model]
+type = 'wan'
+ckpt_path = '${WAN_MODEL_DIR}'
+dtype = 'bfloat16'
+transformer_dtype = 'bfloat16'
+timestep_sample_method = 'logit_normal'
+visual_slot_count = 64
+visual_slot_rows = 8
+visual_slot_cols = 8
+train_new_params_only = false
+partial_slot_condition_prob = 0.3
+partial_slot_condition_min_slots = 1
+partial_slot_condition_max_slots = 16
+prompt_prefix_text = '<grid 64>'
+prompt_prefix_embedding_path = '${PREFIX_EMBEDDING_PATH}'
+tokenizer_max_length = 0
+
+[adapter]
+type = 'lora'
+rank = 32
+dtype = 'bfloat16'
+
+[optimizer]
+type = 'adamw_optimi'
+lr = 2e-5
+betas = [0.9, 0.99]
+weight_decay = 0.01
+eps = 1e-8
+
+[monitoring]
+enable_wandb = false
+wandb_api_key = ''
+wandb_tracker_name = 'wan22_5b_64grid_lora'
+wandb_run_name = 'wan22_5b_64grid_lora'

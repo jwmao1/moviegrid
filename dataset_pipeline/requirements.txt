@@ -1,0 +1,7 @@
+accelerate
+av
+opencv-python
+qwen-vl-utils
+torch
+torchvision
+transformers

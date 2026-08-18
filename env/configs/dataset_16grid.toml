@@ -1,0 +1,9 @@
+resolutions = [[2560, 1536]]
+enable_ar_bucket = true
+ar_buckets = [[2560, 1536]]
+frame_buckets = [65, 77, 81]
+
+[[directory]]
+path = '${DATASET_DIR}'
+precomputed_embeddings = 'wan22_ti2v_embeddings'
+num_repeats = 1
