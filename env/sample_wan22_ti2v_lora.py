@@ -327,7 +327,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument('--ckpt_dir', required=True)
     parser.add_argument('--size', default='2560*1536')
     parser.add_argument('--frame_num', type=int, default=101)
-    parser.add_argument('--sample_steps', type=int, default=30)
+    parser.add_argument('--sample_steps', type=int, default=50)
     parser.add_argument('--sample_shift', type=float, default=None)
     parser.add_argument('--guide_scale', type=float, default=None)
     parser.add_argument('--seed', type=int, default=1234)
