@@ -2,7 +2,7 @@
 
 **[**[**📄 Paper**](https://arxiv.org/abs/2510.20822)**]**
 **[**[**🌐 Project Page**](https://holo-cine.github.io/)**]**
-**[**[**🤗 Model Weights**](https://huggingface.co/JiaMao/StoryPack)**]**
+**[**[**🤗 Model Weights**](https://huggingface.co/JiaMao/StoryGrid)**]**
 
 https://github.com/user-attachments/assets/0b91b967-895f-442e-ac35-76bdbbb95fd9
 
@@ -21,8 +21,8 @@ https://github.com/user-attachments/assets/0b91b967-895f-442e-ac35-76bdbbb95fd9
 - [x] `64 grid inference configuration`
 - [x] `16 grid dataset pipeline`
 - [x] `64 grid dataset pipeline`
-- [x] `StoryPack-16 weight` (For 16 grid video generation)
-- [x] `StoryPack-64 weight` (For 64 grid video generation)
+- [x] `StoryGrid-16 weight` (For 16 grid video generation)
+- [x] `StoryGrid-64 weight` (For 64 grid video generation)
 - [x] `MGLV dataset pipeline`
 
 ### 🗺️ Future Work
@@ -32,8 +32,8 @@ https://github.com/user-attachments/assets/0b91b967-895f-442e-ac35-76bdbbb95fd9
 ## 🛠️ Setup
 
 ```shell
-git clone <repository-url> StoryPack
-cd StoryPack
+git clone <repository-url> StoryGrid
+cd StoryGrid
 
 # The inference entry point imports the official Wan2.2 implementation.
 git clone https://github.com/Wan-Video/Wan2.2.git
@@ -42,8 +42,8 @@ git clone https://github.com/Wan-Video/Wan2.2.git
 ## 🧰 Environment
 
 ```shell
-conda create -n storypack python=3.10 -y
-conda activate storypack
+conda create -n StoryGrid python=3.10 -y
+conda activate StoryGrid
 pip install -r requirements.txt
 pip install flash-attn --no-build-isolation
 ```
@@ -66,11 +66,11 @@ checkpoints/
 │       ├── spiece.model
 │       ├── tokenizer.json
 │       └── tokenizer_config.json
-└── StoryPack/
-    ├── storypack-16/
+└── StoryGrid/
+    ├── StoryGrid-16/
     │   ├── adapter_config.json
     │   └── adapter_model.safetensors
-    └── storypack-64/
+    └── StoryGrid-64/
         ├── adapter_config.json
         └── adapter_model.safetensors
 ```
@@ -84,25 +84,25 @@ hf download Wan-AI/Wan2.2-TI2V-5B \
 
 Use `checkpoints/Wan2.2-TI2V-5B` as `WAN_MODEL_DIR` for both training and inference.
 
-Download the [StoryPack-16 checkpoint](https://huggingface.co/JiaMao/StoryPack/tree/main/storypack-16) for 16-grid inference:
+Download the [StoryGrid-16 checkpoint](https://huggingface.co/JiaMao/StoryGrid/tree/main/StoryGrid-16) for 16-grid inference:
 
 ```shell
-hf download JiaMao/StoryPack \
-  --include "storypack-16/*" \
-  --local-dir checkpoints/StoryPack
+hf download JiaMao/StoryGrid \
+  --include "StoryGrid-16/*" \
+  --local-dir checkpoints/StoryGrid
 ```
 
-For 16 grid video generation, use `checkpoints/StoryPack/storypack-16` as `ADAPTER_DIR`.
+For 16 grid video generation, use `checkpoints/StoryGrid/StoryGrid-16` as `ADAPTER_DIR`.
 
-Download the [StoryPack-64 checkpoint](https://huggingface.co/JiaMao/StoryPack/tree/main/storypack-64) for 64-grid inference:
+Download the [StoryGrid-64 checkpoint](https://huggingface.co/JiaMao/StoryGrid/tree/main/StoryGrid-64) for 64-grid inference:
 
 ```shell
-hf download JiaMao/StoryPack \
-  --include "storypack-64/*" \
-  --local-dir checkpoints/StoryPack
+hf download JiaMao/StoryGrid \
+  --include "StoryGrid-64/*" \
+  --local-dir checkpoints/StoryGrid
 ```
 
-For 64 grid video generation, use `checkpoints/StoryPack/storypack-64` as `ADAPTER_DIR`.
+For 64 grid video generation, use `checkpoints/StoryGrid/StoryGrid-64` as `ADAPTER_DIR`.
 
 ## 🗂️ MGLV Dataset Pipeline
 
@@ -156,22 +156,22 @@ bash scripts/train.sh
 WAN_REPO=Wan2.2 \
 WAN_MODEL_DIR=checkpoints/Wan2.2-TI2V-5B \
 bash scripts/infer.sh \
-  checkpoints/StoryPack/storypack-16 \
+  checkpoints/StoryGrid/StoryGrid-16 \
   env/inference_prompts/16grid/3dcgi_boy_robot_cat_fair_short.txt \
-  outputs/storypack-16
+  outputs/StoryGrid-16
 ```
 
-Generated videos are saved in `outputs/storypack-16`.
+Generated videos are saved in `outputs/StoryGrid-16`.
 
-For 64-grid inference, use the StoryPack-64 LoRA and explicitly select the 8x8 visual-slot layout:
+For 64-grid inference, use the StoryGrid-64 LoRA and explicitly select the 8x8 visual-slot layout:
 
 ```shell
 WAN_REPO=Wan2.2 \
 WAN_MODEL_DIR=checkpoints/Wan2.2-TI2V-5B \
 bash scripts/infer.sh \
-  checkpoints/StoryPack/storypack-64 \
+  checkpoints/StoryGrid/StoryGrid-64 \
   env/inference_prompts/64grid/stopmotion_knitted_penguin_mouse_clocktower.txt \
-  outputs/storypack-64 \
+  outputs/StoryGrid-64 \
   --visual_slot_count 64 \
   --visual_slot_rows 8 \
   --visual_slot_cols 8 \
