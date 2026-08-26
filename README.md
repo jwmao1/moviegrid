@@ -177,3 +177,7 @@ bash scripts/infer.sh \
   --visual_slot_cols 8 \
   --prompt_prefix_text "<grid 64>"
 ```
+
+## 🙏 Acknowledgements
+
+Deeply appreciate these wonderful open source projects: [Wan2.2](https://github.com/Wan-Video/Wan2.2) and [HoloCine](https://holo-cine.github.io/). 
