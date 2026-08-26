@@ -170,7 +170,7 @@ WAN_REPO=Wan2.2 \
 WAN_MODEL_DIR=checkpoints/Wan2.2-TI2V-5B \
 bash scripts/infer.sh \
   checkpoints/StoryGrid/StoryGrid-64 \
-  env/inference_prompts/64grid/stopmotion_knitted_penguin_mouse_clocktower.txt \
+  env/inference_prompts/64grid/cinematic_neural_courier_hospital_airport.txt \
   outputs/StoryGrid-64 \
   --visual_slot_count 64 \
   --visual_slot_rows 8 \
