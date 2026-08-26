@@ -125,7 +125,7 @@ bash dataset_pipeline/run_with_config.sh "$CONFIG" \
   bash dataset_pipeline/code/run_total_vlm_shards.sh \
     path/to/video_list.txt \
     path/to/captions_root \
-    storypack_vlm \
+    storygrid_vlm \
     8
 ```
 
