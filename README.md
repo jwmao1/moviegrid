@@ -181,3 +181,15 @@ bash scripts/infer.sh \
 ## 🙏 Acknowledgements
 
 Deeply appreciate these wonderful open source projects: [Wan2.2](https://github.com/Wan-Video/Wan2.2), [HoloCine](https://holo-cine.github.io/), [Qwen3-VL](https://github.com/QwenLM/Qwen3-VL), [diffusion-pipe](https://github.com/tdrussell/diffusion-pipe), [ComfyUI](https://github.com/comfyanonymous/ComfyUI), [PyTorch](https://github.com/pytorch/pytorch), [Transformers](https://github.com/huggingface/transformers), [Diffusers](https://github.com/huggingface/diffusers), and [PEFT](https://github.com/huggingface/peft). 
+
+## Citation 🔖
+
+If you find this repository useful, please consider giving a star ⭐ and citation 🙈:
+
+```
+@inproceedings{maostory,
+  title={Story-Iter: A Training-free Iterative Paradigm for Long Story Visualization},
+  author={Mao, Jiawei and Huang, Xiaoke and Xie, Yunfei and Chang, Yuanqi and Hui, Mude and Xu, Bingjie and Zheng, Zeyu and Wang, Zirui and Xie, Cihang and Zhou, Yuyin},
+  booktitle={The Fourteenth International Conference on Learning Representations}
+}
+```
