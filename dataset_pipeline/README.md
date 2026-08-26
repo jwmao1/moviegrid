@@ -1,6 +1,6 @@
 # MGLV Dataset Pipeline
 
-This directory contains the preprocessing and captioning pipeline used to build StoryPack 16-grid and 64-grid training samples. Grid geometry is selected through a configuration file. All data paths are supplied through command-line arguments or environment variables; no machine-specific paths are required.
+This directory contains the preprocessing and captioning pipeline used to build StoryGrid 16-grid and 64-grid training samples. Grid geometry is selected through a configuration file. All data paths are supplied through command-line arguments or environment variables; no machine-specific paths are required.
 
 ## Installation
 
