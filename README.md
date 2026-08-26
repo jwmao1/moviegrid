@@ -180,4 +180,4 @@ bash scripts/infer.sh \
 
 ## 🙏 Acknowledgements
 
-Deeply appreciate these wonderful open source projects: [Wan2.2](https://github.com/Wan-Video/Wan2.2) and [HoloCine](https://holo-cine.github.io/). 
+Deeply appreciate these wonderful open source projects: [Wan2.2](https://github.com/Wan-Video/Wan2.2), [HoloCine](https://holo-cine.github.io/), [Qwen3-VL](https://github.com/QwenLM/Qwen3-VL), [diffusion-pipe](https://github.com/tdrussell/diffusion-pipe), [ComfyUI](https://github.com/comfyanonymous/ComfyUI), [PyTorch](https://github.com/pytorch/pytorch), [Transformers](https://github.com/huggingface/transformers), [Diffusers](https://github.com/huggingface/diffusers), and [PEFT](https://github.com/huggingface/peft). 
