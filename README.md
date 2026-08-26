@@ -84,7 +84,7 @@ hf download Wan-AI/Wan2.2-TI2V-5B \
 
 Use `checkpoints/Wan2.2-TI2V-5B` as `WAN_MODEL_DIR` for both training and inference.
 
-Download the [StoryGrid-16 checkpoint](https://huggingface.co/JiaMao/StoryGrid/tree/main/StoryGrid-16) for 16-grid inference:
+Download the [StoryGrid-16 checkpoint](https://huggingface.co/JiaMao/StoryGrid/tree/main/storygrid-16) for 16-grid inference:
 
 ```shell
 hf download JiaMao/StoryGrid \
@@ -94,7 +94,7 @@ hf download JiaMao/StoryGrid \
 
 For 16 grid video generation, use `checkpoints/StoryGrid/StoryGrid-16` as `ADAPTER_DIR`.
 
-Download the [StoryGrid-64 checkpoint](https://huggingface.co/JiaMao/StoryGrid/tree/main/StoryGrid-64) for 64-grid inference:
+Download the [StoryGrid-64 checkpoint](https://huggingface.co/JiaMao/StoryGrid/tree/main/storygrid-64) for 64-grid inference:
 
 ```shell
 hf download JiaMao/StoryGrid \
