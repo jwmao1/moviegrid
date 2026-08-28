@@ -1,6 +1,6 @@
 # MGLV Dataset Pipeline
 
-This directory contains the preprocessing and captioning pipeline used to build StoryGrid 16-grid and 64-grid training samples. Grid geometry is selected through a configuration file. All data paths are supplied through command-line arguments or environment variables; no machine-specific paths are required.
+This directory contains the preprocessing and captioning pipeline used to build MovieGrid 16-grid and 64-grid training samples. Grid geometry is selected through a configuration file. All data paths are supplied through command-line arguments or environment variables; no machine-specific paths are required.
 
 ## Installation
 
@@ -125,7 +125,7 @@ bash dataset_pipeline/run_with_config.sh "$CONFIG" \
   bash dataset_pipeline/code/run_total_vlm_shards.sh \
     path/to/video_list.txt \
     path/to/captions_root \
-    storygrid_vlm \
+    moviegrid_vlm \
     8
 ```
 
