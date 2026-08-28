@@ -67,10 +67,10 @@ checkpoints/
 │       ├── tokenizer.json
 │       └── tokenizer_config.json
 └── MovieGrid/
-    ├── MovieGrid-16/
+    ├── moviegrid-16/
     │   ├── adapter_config.json
     │   └── adapter_model.safetensors
-    └── MovieGrid-64/
+    └── moviegrid-64/
         ├── adapter_config.json
         └── adapter_model.safetensors
 ```
@@ -88,21 +88,21 @@ Download the [MovieGrid-16 checkpoint](https://huggingface.co/JiaMao/MovieGrid/t
 
 ```shell
 hf download JiaMao/MovieGrid \
-  --include "MovieGrid-16/*" \
+  --include "moviegrid-16/*" \
   --local-dir checkpoints/MovieGrid
 ```
 
-For 16 grid video generation, use `checkpoints/MovieGrid/MovieGrid-16` as `ADAPTER_DIR`.
+For 16 grid video generation, use `checkpoints/MovieGrid/moviegrid-16` as `ADAPTER_DIR`.
 
 Download the [MovieGrid-64 checkpoint](https://huggingface.co/JiaMao/MovieGrid/tree/main/moviegrid-64) for 64-grid inference:
 
 ```shell
 hf download JiaMao/MovieGrid \
-  --include "MovieGrid-64/*" \
+  --include "moviegrid-64/*" \
   --local-dir checkpoints/MovieGrid
 ```
 
-For 64 grid video generation, use `checkpoints/MovieGrid/MovieGrid-64` as `ADAPTER_DIR`.
+For 64 grid video generation, use `checkpoints/MovieGrid/moviegrid-64` as `ADAPTER_DIR`.
 
 ## 🗂️ MGLV Dataset Pipeline
 
@@ -156,7 +156,7 @@ bash scripts/train.sh
 WAN_REPO=Wan2.2 \
 WAN_MODEL_DIR=checkpoints/Wan2.2-TI2V-5B \
 bash scripts/infer.sh \
-  checkpoints/MovieGrid/MovieGrid-16 \
+  checkpoints/MovieGrid/moviegrid-16 \
   env/inference_prompts/16grid/3dcgi_boy_robot_cat_fair_short.txt \
   outputs/MovieGrid-16
 ```
@@ -169,7 +169,7 @@ For 64-grid inference, use the MovieGrid-64 LoRA and explicitly select the 8x8 v
 WAN_REPO=Wan2.2 \
 WAN_MODEL_DIR=checkpoints/Wan2.2-TI2V-5B \
 bash scripts/infer.sh \
-  checkpoints/MovieGrid/MovieGrid-64 \
+  checkpoints/MovieGrid/moviegrid-64 \
   env/inference_prompts/64grid/cinematic_neural_courier_hospital_airport.txt \
   outputs/MovieGrid-64 \
   --visual_slot_count 64 \
