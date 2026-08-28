@@ -1,4 +1,4 @@
-# StoryGrid training and inference dependencies.
+# MovieGrid training and inference dependencies.
 # Install the CUDA build of PyTorch before installing this file.
 
 accelerate>=1.1.1
