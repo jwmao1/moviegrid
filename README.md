@@ -26,8 +26,8 @@ https://github.com/user-attachments/assets/0b91b967-895f-442e-ac35-76bdbbb95fd9
 - [x] `MGLV dataset pipeline`
 
 ### 🗺️ Future Work
-- [ ] `support first frame condition`
-- [ ] `support storyboard condition`
+- [ ] `training code support first frame condition and storyboard condition`
+- [ ] `video sources and captions`
 
 ## 🛠️ Setup
 
