@@ -6,7 +6,7 @@
 
 https://github.com/user-attachments/assets/6d8f32b2-5c7e-46ec-a97b-f6a467b5dd78
 
-**Recommend seeing [**Project Page**](https://holo-cine.github.io/) for a high-resolution version.**
+**Recommend seeing [**Project Page**](https://holo-cine.github.io/) for high-resolution version.**
 
 ## 🎬 TLDR
 
