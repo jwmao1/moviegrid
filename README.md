@@ -1,6 +1,6 @@
 # Multi-Grid Post-Training for Long-Form Multi-Shot Video Generation
 
-**[**[**📄 Paper**](https://arxiv.org/abs/2510.20822)**]**
+**[**[**📄 Paper**](https://arxiv.org/abs/2609.06373)**]**
 **[**[**🌐 Project Page**](https://holo-cine.github.io/)**]**
 **[**[**🤗 Model Weights**](https://huggingface.co/JiaMao/MovieGrid)**]**
 
@@ -189,9 +189,13 @@ Deeply appreciate these wonderful open source projects: [Wan2.2](https://github.
 If you find this repository useful, please consider giving a star ⭐ and citation 🙈:
 
 ```
-@inproceedings{maostory,
-  title={Story-Iter: A Training-free Iterative Paradigm for Long Story Visualization},
-  author={Mao, Jiawei and Huang, Xiaoke and Xie, Yunfei and Chang, Yuanqi and Hui, Mude and Xu, Bingjie and Zheng, Zeyu and Wang, Zirui and Xie, Cihang and Zhou, Yuyin},
-  booktitle={The Fourteenth International Conference on Learning Representations}
+@misc{mao2026multigridposttraininglongformmultishot,
+      title={Multi-Grid Post-Training for Long-Form Multi-Shot Video Generation}, 
+      author={Jiawei Mao and Haoqin Tu and Hardy Chen and Yuhan Wang and Keyang Xu and Jieru Mei and Hongliang Fei and Ruogu Fang and Wei Shao and Cihang Xie and Yuyin Zhou},
+      year={2026},
+      eprint={2609.06373},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2609.06373}, 
 }
 ```
