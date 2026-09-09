@@ -1,12 +1,12 @@
 # Multi-Grid Post-Training for Long-Form Multi-Shot Video Generation
 
 **[**[**📄 Paper**](https://arxiv.org/abs/2609.06373)**]**
-**[**[**🌐 Project Page**](https://holo-cine.github.io/)**]**
+**[**[**🌐 Project Page**](https://jwmao1.github.io/moviegrid_web/)**]**
 **[**[**🤗 Model Weights**](https://huggingface.co/JiaMao/MovieGrid)**]**
 
 https://github.com/user-attachments/assets/6d8f32b2-5c7e-46ec-a97b-f6a467b5dd78
 
-**Recommend seeing [**Project Page**](https://holo-cine.github.io/) for high-resolution version.**
+**Recommend seeing [**Project Page**](https://jwmao1.github.io/moviegrid_web/) for high-resolution version.**
 
 ## 🎬 TLDR
 
