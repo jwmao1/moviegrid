@@ -3,6 +3,7 @@
 **[**[**📄 Paper**](https://arxiv.org/abs/2609.06373)**]**
 **[**[**🌐 Project Page**](https://jwmao1.github.io/moviegrid_web/)**]**
 **[**[**🤗 Model Weights**](https://huggingface.co/JiaMao/MovieGrid)**]**
+**[**[**🤗 Dataset**](https://huggingface.co/datasets/JohnWeck/MGLV)**]**
 
 https://github.com/user-attachments/assets/6d8f32b2-5c7e-46ec-a97b-f6a467b5dd78
 
@@ -26,10 +27,10 @@ https://github.com/user-attachments/assets/6d8f32b2-5c7e-46ec-a97b-f6a467b5dd78
 - [x] `MovieGrid-16 weight` (For 16 grid video generation)
 - [x] `MovieGrid-64 weight` (For 64 grid video generation)
 - [x] `MGLV dataset pipeline`
+- [x] `MGLV dataset pipeline`
 
 ### 🗺️ Future Work
 - [ ] `training code support first frame condition and storyboard condition`
-- [ ] `video sources and captions`
 
 ## 🛠️ Setup
 
@@ -106,10 +107,10 @@ hf download JiaMao/MovieGrid \
 
 For 64 grid video generation, use `checkpoints/MovieGrid/moviegrid-64` as `ADAPTER_DIR`.
 
-## 🗂️ MGLV Dataset Pipeline
+## 🗂️ MGLV Dataset
 
 The workflow for building MGLV dataset is available in the [MGLV dataset pipeline documentation](dataset_pipeline/README.md).
-
+The dataset is available on Hugging Face at [JohnWeck/MGLV](https://huggingface.co/datasets/JohnWeck/MGLV).
 
 ## 🚀 Training
 
